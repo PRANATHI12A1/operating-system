@@ -1,1 +1,16 @@
+a)FCFS (First Come First Serve)
 
+Aim: Write a C program to implement the various process scheduling mechanisms such as FCFS
+scheduling.
+Algorithm:
+ Start the process
+ Accept the number of processes in the ready Queue
+ For each process in the ready Q, assign the process id and accept the CPU burst time
+ Set the waiting of the first process as ‘0’ and its burst time as its turn around time
+ for each process in the Ready Q calculate
+ Waiting time for process(n)= waiting time of process (n-1) + Burst time of process(n-1)
+ Turnaround time for Process(n)= waiting time of Process(n)+ Burst time for process(n)
+ Calculate
+ Average waiting time = Total waiting Time / Number of process
+ Average Turnaround time = Total Turnaround Time / Number of process
+ Stop the process
